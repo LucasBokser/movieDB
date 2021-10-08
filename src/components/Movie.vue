@@ -12,7 +12,30 @@
 			<p>Release Date: {{ movie.release_date }}</p>
 			<img :src="imageUrl + movie.poster_path" />
 			<p>{{ movie.overview }}</p>
+      <b-form-rating
+          variant="warning"
+          hover
+          length="10"
+          size="64"
+          v-model="movie.vote_average"
+          class="mb-2"
+          stars="10"
+          inline value="10"
+          readonly
+      ></b-form-rating>
+<!--      <b-embed-->
+<!--          type="iframe"-->
+<!--          aspect="16by9"-->
+<!--          src="movie.video"-->
+<!--          allowfullscreen-->
+<!--      ></b-embed>-->
+<!--      <p>{{movie.video}}</p>-->
+<!--      <b-embed type="video"  controls>-->
 
+<!--        <source :src="movie.video" />-->
+
+<!--      </b-embed>-->
+      <br>
 			<b-button variant="link" size="lg" class="mb-2 mr-sm-2 mb-sm-0">
 				<router-link to="/">Go Back</router-link>
 			</b-button>

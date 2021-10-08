@@ -38,6 +38,17 @@
 					<small>Release Date: {{ item.release_date }}</small>
 					<h3>{{ item.original_title }}</h3>
 					<p>{{ item.overview }}</p>
+          <b-form-rating
+              variant="warning"
+              hover
+              length="10"
+              size="64"
+              v-model="item.vote_average"
+              class="mb-2"
+              stars="10"
+              inline value="10"
+              readonly
+          ></b-form-rating>
 				</article>
 			</li>
 		</ul>
