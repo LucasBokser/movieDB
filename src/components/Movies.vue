@@ -74,8 +74,8 @@
 
 
 <script>
-var baseURL = 'http://api.themoviedb.org/3/discover/movie?api_key=012294b008ce032976f517b73f297916&certification_country=FR&certification.lte=G'
-var searchURL = 'https://api.themoviedb.org/3/search/movie?api_key=012294b008ce032976f517b73f297916&language=fr-US&include_adult=false'
+const baseURL = 'https://api.themoviedb.org/3/discover/movie?api_key=012294b008ce032976f517b73f297916&certification_country=FR&certification.lte=G'
+const searchURL = 'https://api.themoviedb.org/3/search/movie?api_key=012294b008ce032976f517b73f297916&language=fr-US&include_adult=false'
 var url = ''
 import axios from 'axios'
 
